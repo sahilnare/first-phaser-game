@@ -134,6 +134,7 @@
             player.setVelocityY(-460);
         }
     }
+
     function collectStar (player, star)
     {
         star.disableBody(true, true);
@@ -155,6 +156,7 @@
             bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);
         }
     }
+    
     function hitBomb (player, bomb)
     {
         this.physics.pause();
