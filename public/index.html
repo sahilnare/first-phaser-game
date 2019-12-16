@@ -6,6 +6,7 @@
 <body>
 
     <script>
+        
     var config = {
         type: Phaser.AUTO,
         width: 800,
@@ -106,8 +107,8 @@
         this.physics.add.collider(bombs, platforms);
 
         this.physics.add.collider(player, bombs, hitBomb, null, this);
-
     }
+
     function update ()
     {
         if (cursors.left.isDown)
